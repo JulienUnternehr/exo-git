@@ -145,6 +145,6 @@ MORE INFORMATION
 My name is : Emile MILLOGO 13h40mn 25/05/2018
 
 
- Modification de README Par Mike ...:)
+ - Mike  -  Modification de README Par Mike ...:)
 
- - New test on the README file at 14h20 ...
+ - Mike  -  New test on the README file at 14h20 ...
