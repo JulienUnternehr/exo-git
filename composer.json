@@ -12,7 +12,8 @@
         "drupal/console": "^1.8",
 
         "drupal/route_condition": "^1.0@alpha",
-        "drupal/paragraphs": "^1.2"
+        "drupal/paragraphs": "^1.2",
+        "drupal/pathauto": "^1.2"
 
     },
     "replace": {
