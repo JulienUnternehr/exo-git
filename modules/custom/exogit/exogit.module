@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains exogit.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function exogit_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the exogit module.
+    case 'help.page.exogit':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('exo git') . '</p>';
+      return $output;
+
+    default:
+  }
+}
