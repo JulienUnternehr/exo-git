@@ -1,0 +1,5 @@
+name: 'exogit'
+type: module
+description: 'exo git'
+core: 8.x
+package: 'Custom'

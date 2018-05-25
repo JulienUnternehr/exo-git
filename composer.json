@@ -9,7 +9,11 @@
         "drupal/admin_toolbar": "^1.23",
         "drupal/module_filter": "^3.1",
         "drupal/video": "^1.2",
-        "drupal/autocomplete_deluxe": "^1.0@beta"
+        "drupal/autocomplete_deluxe": "^1.0@beta",
+        "drupal/pathauto": "^1.2",
+        "drupal/console": "^1.8",
+        "drupal/route_condition": "^1.0@alpha",
+        "drupal/paragraphs": "^1.2"
     },
     "replace": {
         "drupal/core": "^8.5"
