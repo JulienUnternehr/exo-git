@@ -16,7 +16,8 @@
 
         "drupal/route_condition": "^1.0@alpha",
         "drupal/paragraphs": "^1.2",
-        "drupal/audiofield": "^1.5"
+        "drupal/audiofield": "^1.5",
+        "drupal/bootstrap": "^3.11"
     },
     "replace": {
         "drupal/core": "^8.5"
