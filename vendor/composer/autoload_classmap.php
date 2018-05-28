@@ -118,9 +118,15 @@ return array(
     'PEAR_Sniffs_WhiteSpace_ScopeClosingBraceSniff' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/WhiteSpace/ScopeClosingBraceSniff.php',
     'PEAR_Sniffs_WhiteSpace_ScopeIndentSniff' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/WhiteSpace/ScopeIndentSniff.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
+<<<<<<< HEAD
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
     'PHPUnit\\Framework\\AssertionFailedError' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/AssertionFailedError.php',
     'PHPUnit\\Framework\\BaseTestListener' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
+=======
+    'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
+    'PHPUnit\\Framework\\AssertionFailedError' => $vendorDir . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
+    'PHPUnit\\Framework\\BaseTestListener' => $vendorDir . '/phpunit/phpunit/src/Framework/BaseTestListener.php',
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
     'PHPUnit\\Framework\\CodeCoverageException' => $vendorDir . '/phpunit/phpunit/src/Framework/CodeCoverageException.php',
     'PHPUnit\\Framework\\Constraint\\ArrayHasKey' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php',
     'PHPUnit\\Framework\\Constraint\\ArraySubset' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php',
@@ -235,6 +241,7 @@ return array(
     'PHPUnit\\Framework\\SkippedTestError' => $vendorDir . '/phpunit/phpunit/src/Framework/SkippedTestError.php',
     'PHPUnit\\Framework\\SkippedTestSuiteError' => $vendorDir . '/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php',
     'PHPUnit\\Framework\\SyntheticError' => $vendorDir . '/phpunit/phpunit/src/Framework/SyntheticError.php',
+<<<<<<< HEAD
     'PHPUnit\\Framework\\Test' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/Test.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
     'PHPUnit\\Framework\\TestFailure' => $vendorDir . '/phpunit/phpunit/src/Framework/TestFailure.php',
@@ -242,6 +249,15 @@ return array(
     'PHPUnit\\Framework\\TestListenerDefaultImplementation' => $vendorDir . '/phpunit/phpunit/src/Framework/TestListenerDefaultImplementation.php',
     'PHPUnit\\Framework\\TestResult' => $vendorDir . '/phpunit/phpunit/src/Framework/TestResult.php',
     'PHPUnit\\Framework\\TestSuite' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestSuite.php',
+=======
+    'PHPUnit\\Framework\\Test' => $vendorDir . '/phpunit/phpunit/src/Framework/Test.php',
+    'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/Framework/TestCase.php',
+    'PHPUnit\\Framework\\TestFailure' => $vendorDir . '/phpunit/phpunit/src/Framework/TestFailure.php',
+    'PHPUnit\\Framework\\TestListener' => $vendorDir . '/phpunit/phpunit/src/Framework/TestListener.php',
+    'PHPUnit\\Framework\\TestListenerDefaultImplementation' => $vendorDir . '/phpunit/phpunit/src/Framework/TestListenerDefaultImplementation.php',
+    'PHPUnit\\Framework\\TestResult' => $vendorDir . '/phpunit/phpunit/src/Framework/TestResult.php',
+    'PHPUnit\\Framework\\TestSuite' => $vendorDir . '/phpunit/phpunit/src/Framework/TestSuite.php',
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
     'PHPUnit\\Framework\\TestSuiteIterator' => $vendorDir . '/phpunit/phpunit/src/Framework/TestSuiteIterator.php',
     'PHPUnit\\Framework\\UnintentionallyCoveredCodeError' => $vendorDir . '/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php',
     'PHPUnit\\Framework\\Warning' => $vendorDir . '/phpunit/phpunit/src/Framework/Warning.php',
@@ -288,6 +304,7 @@ return array(
     'PHPUnit\\Util\\Type' => $vendorDir . '/phpunit/phpunit/src/Util/Type.php',
     'PHPUnit\\Util\\Xml' => $vendorDir . '/phpunit/phpunit/src/Util/Xml.php',
     'PHPUnit\\Util\\XmlTestListRenderer' => $vendorDir . '/phpunit/phpunit/src/Util/XmlTestListRenderer.php',
+<<<<<<< HEAD
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
     'PHPUnit_Extensions_PhptTestCase' => $vendorDir . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
     'PHPUnit_Extensions_PhptTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/PhptTestSuite.php',
@@ -397,6 +414,9 @@ return array(
     'PHP_CodeCoverage_Report_XML_Totals' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php',
     'PHP_CodeCoverage_Util' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage/Util.php',
     'PHP_CodeCoverage_Util_InvalidArgumentHelper' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php',
+=======
+    'PHPUnit_Framework_MockObject_MockObject' => $vendorDir . '/phpunit/phpunit-mock-objects/src/MockObject.php',
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
     'PHP_CodeSniffer' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer.php',
     'PHP_CodeSniffer_CLI' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/CLI.php',
     'PHP_CodeSniffer_DocGenerators_Generator' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/DocGenerators/Generator.php',
@@ -779,9 +799,12 @@ return array(
     'SebastianBergmann\\Diff\\Differ' => $vendorDir . '/sebastian/diff/src/Differ.php',
     'SebastianBergmann\\Diff\\Exception' => $vendorDir . '/sebastian/diff/src/Exception/Exception.php',
     'SebastianBergmann\\Diff\\InvalidArgumentException' => $vendorDir . '/sebastian/diff/src/Exception/InvalidArgumentException.php',
+<<<<<<< HEAD
     'SebastianBergmann\\Diff\\LCS\\LongestCommonSubsequence' => $vendorDir . '/sebastian/diff/src/LCS/LongestCommonSubsequence.php',
     'SebastianBergmann\\Diff\\LCS\\MemoryEfficientImplementation' => $vendorDir . '/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php',
     'SebastianBergmann\\Diff\\LCS\\TimeEfficientImplementation' => $vendorDir . '/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php',
+=======
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
     'SebastianBergmann\\Diff\\Line' => $vendorDir . '/sebastian/diff/src/Line.php',
     'SebastianBergmann\\Diff\\LongestCommonSubsequenceCalculator' => $vendorDir . '/sebastian/diff/src/LongestCommonSubsequenceCalculator.php',
     'SebastianBergmann\\Diff\\MemoryEfficientLongestCommonSubsequenceCalculator' => $vendorDir . '/sebastian/diff/src/MemoryEfficientLongestCommonSubsequenceCalculator.php',
@@ -797,9 +820,9 @@ return array(
     'SebastianBergmann\\Exporter\\Exporter' => $vendorDir . '/sebastian/exporter/src/Exporter.php',
     'SebastianBergmann\\GlobalState\\Blacklist' => $vendorDir . '/sebastian/global-state/src/Blacklist.php',
     'SebastianBergmann\\GlobalState\\CodeExporter' => $vendorDir . '/sebastian/global-state/src/CodeExporter.php',
-    'SebastianBergmann\\GlobalState\\Exception' => $vendorDir . '/sebastian/global-state/src/Exception.php',
+    'SebastianBergmann\\GlobalState\\Exception' => $vendorDir . '/sebastian/global-state/src/exceptions/Exception.php',
     'SebastianBergmann\\GlobalState\\Restorer' => $vendorDir . '/sebastian/global-state/src/Restorer.php',
-    'SebastianBergmann\\GlobalState\\RuntimeException' => $vendorDir . '/sebastian/global-state/src/RuntimeException.php',
+    'SebastianBergmann\\GlobalState\\RuntimeException' => $vendorDir . '/sebastian/global-state/src/exceptions/RuntimeException.php',
     'SebastianBergmann\\GlobalState\\Snapshot' => $vendorDir . '/sebastian/global-state/src/Snapshot.php',
     'SebastianBergmann\\ObjectEnumerator\\Enumerator' => $vendorDir . '/sebastian/object-enumerator/src/Enumerator.php',
     'SebastianBergmann\\ObjectEnumerator\\Exception' => $vendorDir . '/sebastian/object-enumerator/src/Exception.php',
