@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "52d99d754c98ad0ec03f201b28ff1d76",
+    "content-hash": "f7d0d168b8b2042c0fb2badb33865e7e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -977,67 +977,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
-        },
-        {
-            "name": "drupal/audiofield",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/audiofield",
-                "reference": "8.x-1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/audiofield-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "bd63641c2ed9e9774b82423bf03c95540b395126"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1514414884",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Moberly",
-                    "homepage": "https://www.drupal.org/u/danielmoberly",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "josipsaric",
-                    "homepage": "https://www.drupal.org/user/3063287"
-                },
-                {
-                    "name": "msajko",
-                    "homepage": "https://www.drupal.org/user/3483723"
-                },
-                {
-                    "name": "tamerzg",
-                    "homepage": "https://www.drupal.org/user/464564"
-                }
-            ],
-            "description": "AudioField Module",
-            "homepage": "https://www.drupal.org/project/audiofield",
-            "support": {
-                "source": "http://cgit.drupalcode.org/audiofield",
-                "issues": "https://www.drupal.org/project/issues/audiofield"
             }
         },
         {
