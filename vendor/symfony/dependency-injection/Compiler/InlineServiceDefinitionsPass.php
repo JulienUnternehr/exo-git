@@ -138,10 +138,6 @@ class InlineServiceDefinitionsPass extends AbstractRecursivePass implements Repe
             return false;
         }
 
-<<<<<<< HEAD
         return !$ids || $this->container->getDefinition($ids[0])->isShared();
-=======
-        return $this->container->getDefinition($ids[0])->isShared();
->>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
     }
 }
