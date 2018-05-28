@@ -14,7 +14,11 @@
         "drupal/console": "^1.8",
         "drupal/route_condition": "^1.0@alpha",
         "drupal/paragraphs": "^1.2",
-        "drupal/audiofield": "^1.6"
+        "drupal/audiofield": "^1.6",
+        "drupal/bootstrap": "^3.11",
+        "drupal/colorbox": "^1.4",
+        "drupal/conditional_fields": "^1.0@alpha",
+        "drupal/views_slideshow": "^4.6"
     },
     "replace": {
         "drupal/core": "^8.5"
