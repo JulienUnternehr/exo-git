@@ -298,10 +298,14 @@ $config_directories = array();
  * @endcode
  */
 <<<<<<< HEAD
+$settings['hash_salt'] = 'zyEa0PYpFhqRXk4RY8PRj5OlY3apHgUnskf95Tcf8T89A9zkcq1asq0Qmt_f_15EakX6z-G1zA';
+=======
+<<<<<<< HEAD
 $settings['hash_salt'] = 'l4qfgrO5IZPxzUWXlzHA-oPZ5QTXWeCFuGRnauhvaanoDJjPNTQn_ZeDmlIkRBZVNuL2nTYlKw';
 =======
 $settings['hash_salt'] = 'WEJBC-cfG_oa4XpOb1TWV5FjFhRiUM0e8ZSKuJwHH20z3yo48S5fxGMBc0PtI4PvLS9OepKvKA';
 >>>>>>> 453fb9cfad68f61983e4d23722252a8108426895
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
 
 /**
  * Deployment identifier.
@@ -790,6 +794,11 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
+<<<<<<< HEAD
+  'database' => 'exo_git',
+  'username' => 'root',
+  'password' => 'admin',
+=======
   'database' => 'db_exo_git',
   'username' => 'root',
 <<<<<<< HEAD
@@ -797,6 +806,7 @@ $databases['default']['default'] = array (
 =======
   'password' => 'root',
 >>>>>>> 453fb9cfad68f61983e4d23722252a8108426895
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -805,7 +815,11 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 <<<<<<< HEAD
+$config_directories['sync'] = 'sites/default/files/config_0pOqE8jsaVO9S1qyL8oS9R4irVAeTt_xNGIIkv3lQUoAkBavPyj0vtoKqDe5H87qrW29YealWg/sync';
+=======
+<<<<<<< HEAD
 $config_directories['sync'] = 'sites/default/files/config_EBEKFNKt8GFrl2gKOw_h5UnS0UkjY2qVdJ6mRCdL42DCSAqZBqZ_jx-kZLdotYNDvuoR0yRKiQ/sync';
 =======
 $config_directories['sync'] = 'sites/default/files/config_O4sGhYmR5WA2jQ_rGZhT2lhd32shq_haIpQVb347Nhd8-GHgwOEu5sG1UDKh-Rs9uFoaA6EP8g/sync';
 >>>>>>> 453fb9cfad68f61983e4d23722252a8108426895
+>>>>>>> 82a25f2fe7900c2ffa4279dd56c29a5aa32430e0
