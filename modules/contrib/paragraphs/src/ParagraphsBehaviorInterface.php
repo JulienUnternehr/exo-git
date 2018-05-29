@@ -123,8 +123,28 @@ interface ParagraphsBehaviorInterface extends PluginFormInterface, ConfigurableP
   public function settingsSummary(Paragraph $paragraph);
 
   /**
+<<<<<<< HEAD
    * Returns list of field names for the given paragraph type and field type.
    *
+=======
+   * Returns a short info icon for the current behavior settings.
+   *
+   * Usually the information is in the form of an icon or a badge or some
+   * similar graphical representation.
+   *
+   * @param \Drupal\paragraphs\Entity\Paragraph $paragraph
+   *   The paragraph.
+   *
+   * @return string[]
+   *   The plugin settings.
+   *
+   * @see ParagraphInterface::getIcons()
+   */
+  public function settingsIcon(Paragraph $paragraph);
+
+  /**
+   * Returns list of field names for the given paragraph type and field type.
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
    *
    * @param \Drupal\paragraphs\Entity\ParagraphsType $paragraphs_type
    *   The paragraphs type entity.

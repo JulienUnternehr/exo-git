@@ -53,6 +53,7 @@
 
   Drupal.behaviors.paragraphsDraggable = {
     attach: function (context) {
+<<<<<<< HEAD
 
       // Initialize drag and drop.
       $('ul.paragraphs-dragdrop', context).each(function (i, item) {
@@ -62,6 +63,25 @@
           handle: ".tabledrag-handle",
           onMove: isAllowed,
           onEnd: handleReorder
+=======
+      // Prevent default click handling on the drag handle.
+      $('.paragraphs-dragdrop__handle', context).on('click', function (event) {
+        event.preventDefault();
+      });
+
+      // Initialize drag and drop.
+      $('ul.paragraphs-dragdrop__list', context).each(function (i, item) {
+        $(item).paragraphsSortable({
+          group: "paragraphs",
+          sort: true,
+          handle: ".paragraphs-dragdrop__handle",
+          onMove: isAllowed,
+          onEnd: function(evt) {
+            handleReorder(evt);
+            endDragClasses();
+          },
+          onStart: startDragClasses,
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
         });
       });
 
@@ -73,7 +93,11 @@
        */
       function handleReorder(evt) {
         var $item = $(evt.item);
+<<<<<<< HEAD
         var $parent = $item.closest('.paragraphs-dragdrop');
+=======
+        var $parent = $item.closest('.paragraphs-dragdrop__list');
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
         var $children = $parent.children('li');
         var $srcParent = $(evt.to);
         var $srcChildren = $srcParent.children('li');
@@ -81,6 +105,10 @@
         // Update both the source and target children.
         updateWeightsAndPath($srcChildren);
         updateWeightsAndPath($children);
+<<<<<<< HEAD
+=======
+        endDragClasses();
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       }
 
 
@@ -173,7 +201,14 @@
         var drageeType = dragee.dataset.paragraphsDragdropBundle;
         var allowedTypes = target.dataset.paragraphsDragdropAllowedTypes;
         var hasSameContainer = evt.to === evt.from;
+<<<<<<< HEAD
         return hasSameContainer || (contains(drageeType, allowedTypes) && hasRoom(target));
+=======
+        var allowed = hasSameContainer || (contains(drageeType, allowedTypes) && hasRoom(target));
+        targetAllowedClasses(target, allowed);
+
+        return allowed;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       }
 
       /**
@@ -218,6 +253,41 @@
         return false;
       }
 
+<<<<<<< HEAD
+=======
+      /**
+       * Provides a helper class indicating drag status on <html> element when
+       * dragging starts.
+       */
+      function startDragClasses() {
+        $('html').addClass('is-dragging-paragraphs');
+      }
+
+      /**
+       * Provides a helper class indicating a valid drop target via isAllowed().
+       *
+       * @param target
+       *   The target list/paragraph field.
+       *
+       * @param {boolean} allowed
+       *   TRUE if the target type is allowed.
+       */
+      function targetAllowedClasses(target, allowed) {
+        $('.is-droppable-target').removeClass('is-droppable-target');
+        if (allowed) {
+          $(target).addClass('is-droppable-target');
+        }
+      }
+
+      /**
+       * Removes helper classes when dragging ends.
+       */
+      function endDragClasses() {
+        $('html').removeClass('is-dragging-paragraphs');
+        $('.is-droppable-target').removeClass('is-droppable-target');
+      }
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       // Fix for an iOS 10 bug. Binding empty event handler on the touchmove
       // event.
       window.addEventListener('touchmove', function () {

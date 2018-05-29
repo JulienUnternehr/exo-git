@@ -56,6 +56,13 @@
 
         // Destroy dialog object.
         $dialog.dialog('destroy');
+<<<<<<< HEAD
+=======
+        // Reset delta after destroying the dialog object.
+        var $delta = $dialog.closest('.clearfix')
+          .find('.paragraph-type-add-modal-delta');
+        $delta.val('');
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       }
     });
 

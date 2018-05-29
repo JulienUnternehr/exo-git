@@ -63,4 +63,25 @@ class TestBoldTextBehavior extends ParagraphsBehaviorBase {
     $bold_setting = $paragraph->getBehaviorSetting($this->getPluginId(), 'bold_text');
     return [$bold_setting ? $this->t('Bold: Yes') : $this->t('Bold: No')];
   }
+<<<<<<< HEAD
+=======
+
+  /**
+   * {@inheritdoc}
+   */
+  public function settingsIcon(Paragraph $paragraph) {
+    $bold_setting = $paragraph->getBehaviorSetting($this->getPluginId(), 'bold_text');
+    if ($bold_setting) {
+      return [
+        'bold' => [
+          '#theme' => 'paragraphs_info_icon',
+          '#message' => $this->t('Bold: Yes.'),
+          '#icon' => 'bold',
+        ],
+      ];
+    }
+    return [];
+  }
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 }

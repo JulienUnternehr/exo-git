@@ -1,7 +1,11 @@
 framework:
   css:
     theme:
+<<<<<<< HEAD
       stylesheets/style.css: {}
+=======
+      css/style.css: {}
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   js:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
     bootstrap/assets/javascripts/bootstrap/alert.js: {}

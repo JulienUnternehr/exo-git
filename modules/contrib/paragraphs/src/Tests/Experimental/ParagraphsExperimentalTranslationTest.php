@@ -230,9 +230,15 @@ class ParagraphsExperimentalTranslationTest extends ParagraphsExperimentalTestBa
     $this->drupalPostForm(NULL, $edit, t('Save settings'));
 
     // Create a node with an image paragraph, its alt and title text.
+<<<<<<< HEAD
     $text = 'Trust me I\'m an image';
     file_put_contents('temporary://Image.jpg', $text);
     $file_path = $this->container->get('file_system')->realpath('temporary://Image.jpg');
+=======
+    $files = $this->drupalGetTestFiles('image');
+    $file_system = \Drupal::service('file_system');
+    $file_path = $file_system->realpath($file_system->realpath($files[0]->uri));
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     $this->drupalGet('node/add/paragraphed_content_demo');
     $this->drupalPostForm(NULL, [], t('Add Images'));
     $this->drupalPostForm(NULL, ['files[field_paragraphs_demo_0_subform_field_images_demo_0][]' => $file_path], t('Upload'));
@@ -240,8 +246,11 @@ class ParagraphsExperimentalTranslationTest extends ParagraphsExperimentalTestBa
       'title[0][value]' => 'Title EN',
       'field_paragraphs_demo[0][subform][field_images_demo][0][alt]' => 'Image alt',
       'field_paragraphs_demo[0][subform][field_images_demo][0][title]' => 'Image title',
+<<<<<<< HEAD
       'field_paragraphs_demo[0][subform][field_images_demo][0][width]' => 100,
       'field_paragraphs_demo[0][subform][field_images_demo][0][height]' => 100,
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     ];
     $this->drupalPostForm(NULL, $edit, t('Save'));
 
@@ -299,6 +308,10 @@ class ParagraphsExperimentalTranslationTest extends ParagraphsExperimentalTestBa
     $this->drupalPostForm(NULL, [], t('Save'));
     $this->assertText('Paragraphed article ' . $node->label() . ' has been updated.');
     // Check that first paragraph langcode has been updated.
+<<<<<<< HEAD
+=======
+    \Drupal::entityTypeManager()->getStorage('paragraph')->resetCache([$paragraph_1->id(), $paragraph_2->id()]);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     $paragraph = Paragraph::load($paragraph_1->id());
     $this->assertEqual($paragraph->language()->getId(), 'de');
     $this->assertFalse($paragraph->hasTranslation('en'));

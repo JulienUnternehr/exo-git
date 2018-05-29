@@ -2,6 +2,7 @@
 
 namespace Drupal\paragraphs;
 
+<<<<<<< HEAD
 use Drupal\Component\Plugin\PluginBase;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Entity\EntityFieldManager;
@@ -9,14 +10,25 @@ use Drupal\Core\Field\FieldConfigInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+=======
+use Drupal\Core\Plugin\PluginBase;
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Core\Entity\EntityFieldManager;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\field\FieldConfigInterface;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\paragraphs\Entity\ParagraphsType;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 abstract class ParagraphsBehaviorBase extends PluginBase implements ParagraphsBehaviorInterface, ContainerFactoryPluginInterface {
 
+<<<<<<< HEAD
   use StringTranslationTrait;
 
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   /**
    * The entity field manager.
    *
@@ -118,6 +130,16 @@ abstract class ParagraphsBehaviorBase extends PluginBase implements ParagraphsBe
   /**
    * {@inheritdoc}
    */
+<<<<<<< HEAD
+=======
+  public function settingsIcon(Paragraph $paragraph) {
+    return [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   public function buildBehaviorForm(ParagraphInterface $paragraph, array &$form, FormStateInterface $form_state) {
     return $form;
   }

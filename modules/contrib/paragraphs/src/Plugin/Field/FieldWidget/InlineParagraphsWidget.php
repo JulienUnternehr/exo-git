@@ -44,7 +44,11 @@ class InlineParagraphsWidget extends WidgetBase {
    *
    * @var bool
    */
+<<<<<<< HEAD
   private $isTranslating;
+=======
+  protected $isTranslating;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
   /**
    * Id to name ajax buttons that includes field parents and field name.
@@ -270,6 +274,10 @@ class InlineParagraphsWidget extends WidgetBase {
       $paragraphs_entity = $entity_manager->getStorage($target_type)->create(array(
         $bundle_key => $widget_state['selected_bundle'],
       ));
+<<<<<<< HEAD
+=======
+      $paragraphs_entity->setParentEntity($items->getEntity(), $field_name);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
       $item_mode = 'edit';
     }
@@ -358,6 +366,10 @@ class InlineParagraphsWidget extends WidgetBase {
       $element += array(
         '#type' => 'container',
         '#element_validate' => array(array($this, 'elementValidate')),
+<<<<<<< HEAD
+=======
+        '#paragraph_type' => $paragraphs_entity->bundle(),
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
         'subform' => array(
           '#type' => 'container',
           '#parents' => $element_parents,
@@ -446,9 +458,12 @@ class InlineParagraphsWidget extends WidgetBase {
             );
           }
 
+<<<<<<< HEAD
           // Hide the button when translating.
           $button_access = $paragraphs_entity->access('delete') && !$this->isTranslating;
 
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
           $info['edit_button_info'] = array(
             '#type' => 'container',
             '#markup' => $this->t('You are not allowed to edit this @title.', array('@title' => $this->getSetting('title'))),
@@ -766,6 +781,10 @@ class InlineParagraphsWidget extends WidgetBase {
         $paragraphs_entity = $entity_type_manager->getStorage($target_type)->create([
           'type' => $default_type,
         ]);
+<<<<<<< HEAD
+=======
+        $paragraphs_entity->setParentEntity($items->getEntity(), $field_name);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
         $field_state['selected_bundle'] = $default_type;
         $display = EntityFormDisplay::collectRenderDisplay($paragraphs_entity, $this->getSetting('form_display_mode'));
         $field_state['paragraphs'][0] = [

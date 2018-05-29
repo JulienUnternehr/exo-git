@@ -56,6 +56,13 @@ class ParagraphsPreviewTest extends ParagraphsTestBase {
     // Check if the text is displayed.
     $this->assertRaw($test_text_1);
 
+<<<<<<< HEAD
+=======
+    // Check that the parent is set correctly on all paragraphs.
+    $this->assertNoText('Parent: //');
+    $this->assertNoUniqueText('Parent: node//field_paragraphs');
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     // Go back to the editing form.
     $this->clickLink('Back to content editing');
 
@@ -85,6 +92,14 @@ class ParagraphsPreviewTest extends ParagraphsTestBase {
     $this->drupalPostForm(NULL, $edit, t('Preview'));
     $this->assertRaw($test_text_1);
     $this->assertRaw($new_test_text_2);
+<<<<<<< HEAD
+=======
+
+    // Check that the parent is set correctly on all paragraphs.
+    $this->assertNoText('Parent: //');
+    $this->assertNoUniqueText('Parent: node/1/field_paragraphs');
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     // Go back to the editing form.
     $this->clickLink('Back to content editing');
     $paragraph_1 = $this->xpath('//*[@id="edit-field-paragraphs-0-subform-field-text-0-value"]')[0];

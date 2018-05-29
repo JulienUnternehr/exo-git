@@ -43,6 +43,10 @@
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+<<<<<<< HEAD
+=======
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   ]
 %}
 {% block paragraph %}

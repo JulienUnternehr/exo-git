@@ -6,6 +6,7 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/core": "^8.5",
         "drupal/admin_toolbar": "^1.23",
         "drupal/module_filter": "^3.1",
         "drupal/video": "^1.2",
@@ -14,11 +15,17 @@
         "drupal/console": "^1.8",
         "drupal/route_condition": "^1.0@alpha",
         "drupal/paragraphs": "^1.2",
+
         "drupal/audiofield": "^1.6",
         "drupal/bootstrap": "^3.11",
         "drupal/colorbox": "^1.4",
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/views_slideshow": "^4.6"
+
+        "drupal/bootstrap": "^3.11",
+        "drupal/audiofield": "^1.5",
+        "drupal/codesnippet": "^1.6"
+
     },
     "replace": {
         "drupal/core": "^8.5"

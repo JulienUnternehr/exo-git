@@ -20,12 +20,33 @@ drupal.paragraphs.widget:
     - core/jquery.form
     - core/drupal.ajax
     - core/drupal.dropbutton
+<<<<<<< HEAD
+=======
+    - paragraphs/drupal.paragraphs.summary
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   css:
     theme:
       css/paragraphs.widget.css: {}
   js:
     js/paragraphs.admin.js: {}
 
+<<<<<<< HEAD
+=======
+drupal.paragraphs.add_above_button:
+  css:
+    theme:
+      css/paragraphs.actions.css: {}
+  js:
+    js/paragraphs.add_above_button.js: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery.once
+    - core/jquery
+    - core/jquery.form
+    - core/drupal.ajax
+    - core/drupal
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 drupal.paragraphs.actions:
   css:
     theme:
@@ -75,3 +96,18 @@ paragraphs-dragdrop:
     - core/jquery
     - core/drupal
     - paragraphs/sortable
+<<<<<<< HEAD
+=======
+
+drupal.paragraphs.formatter:
+  css:
+    theme:
+      css/paragraphs.formatter.css: {}
+  dependencies:
+    - paragraphs/drupal.paragraphs.summary
+
+drupal.paragraphs.unpublished:
+  css:
+    theme:
+      css/paragraphs.unpublished.css: {}
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4

@@ -4,6 +4,10 @@
 //
 
 @import "variables";
+<<<<<<< HEAD
+=======
+@import "summary";
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
 .paragraphs {
   // Paragraphs state information icons.
@@ -54,16 +58,41 @@
   }
 }
 
+<<<<<<< HEAD
 .paragraph-type-info {
   display: flex;
 }
 
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 .paragraphs-tabs-wrapper {
   .paragraphs-tabs {
     display: none;
   }
 }
 
+<<<<<<< HEAD
+=======
+.paragraph-bullet {
+  text-align: center;
+  &:after {
+    content: "\25cf";
+    padding: 0 10px;
+    color: #777;
+    font-size: 0.75em;
+    line-height: 3.5em;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, 'md')) {
+  .paragraph-bullet {
+    &:after {
+      line-height: 2.5em;
+    }
+  }
+}
+
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 // We are using .js prefix here mainly because we want to apply this style rules
 // only for JS version of a widget.
 .js {
@@ -122,14 +151,26 @@
     }
   }
 
+<<<<<<< HEAD
   .paragraph-type-top {
+=======
+  .paragraph-top {
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     display: grid;
     grid-template-columns: 100px auto 1fr auto;
     grid-template-rows: auto;
     grid-gap: $gutter-top $gutter-top;
     align-items: center;
 
+<<<<<<< HEAD
     .paragraph-type-title {
+=======
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+      grid-template-columns: 150px auto 1fr auto;
+    }
+
+    .paragraph-type {
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       grid-column: 1 / 2;
       // PostCSS autoprefixer does not support -ms-grid-column and some other
       // attributes that we need. This support will not be improved so we need
@@ -138,13 +179,21 @@
       grid-row: 1 / span 1;
     }
 
+<<<<<<< HEAD
     .paragraph-type-info {
+=======
+    .paragraph-info {
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       grid-column: 2 / 3;
       -ms-grid-column: 2;
       grid-row: 1 / span 1;
     }
 
+<<<<<<< HEAD
     .paragraph-type-summary {
+=======
+    .paragraph-summary {
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       grid-column: 1 / 5;
       -ms-grid-column: 1;
       -ms-grid-column-span: 5;
@@ -179,6 +228,7 @@
   }
 
   .paragraphs-collapsed-description {
+<<<<<<< HEAD
     position: relative;
     height: 1.538em;
     overflow: hidden;
@@ -196,6 +246,8 @@
       content: "\00a0";
     }
 
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     @at-root .draggable:hover .paragraphs-collapsed-description {
       &::after {
         background: linear-gradient(to right, rgba(247, 252, 255, 0) 0%, #f7fcff 100%);
@@ -216,6 +268,12 @@
   }
 
   .paragraph-type {
+<<<<<<< HEAD
+=======
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
     &-title {
       display: flex;
       flex-basis: 100px;

@@ -25,6 +25,10 @@ class ParagraphsServiceProvider extends ServiceProviderBase {
         [new Reference('replicate.replicator')]
       );
       $service_definition->addTag('event_subscriber');
+<<<<<<< HEAD
+=======
+      $service_definition->setPublic(TRUE);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       $container->setDefinition('replicate.event_subscriber.paragraphs', $service_definition);
     }
   }

@@ -2,6 +2,10 @@
 
 namespace Drupal\paragraphs;
 
+<<<<<<< HEAD
+=======
+use Drupal\Core\Entity\EntityPublishedInterface;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 use Drupal\user\EntityOwnerInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\entity_reference_revisions\EntityNeedsSaveInterface;
@@ -10,7 +14,11 @@ use Drupal\entity_reference_revisions\EntityNeedsSaveInterface;
  * Provides an interface defining a paragraphs entity.
  * @ingroup paragraphs
  */
+<<<<<<< HEAD
 interface ParagraphInterface extends ContentEntityInterface, EntityOwnerInterface, EntityNeedsSaveInterface {
+=======
+interface ParagraphInterface extends ContentEntityInterface, EntityOwnerInterface, EntityNeedsSaveInterface, EntityPublishedInterface {
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
   /**
    * Gets the parent entity of the paragraph.
@@ -23,6 +31,21 @@ interface ParagraphInterface extends ContentEntityInterface, EntityOwnerInterfac
   public function getParentEntity();
 
   /**
+<<<<<<< HEAD
+=======
+   * Set the parent entity of the paragraph.
+   *
+   * @param \Drupal\Core\Entity\ContentEntityInterface $parent
+   *   The parent entity.
+   * @param string $parent_field_name
+   *   The parent field name.
+   *
+   * @return $this
+   */
+  public function setParentEntity(ContentEntityInterface $parent, $parent_field_name);
+
+  /**
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
    * Returns short summary for paragraph.
    *
    * @param array $options
@@ -39,6 +62,23 @@ interface ParagraphInterface extends ContentEntityInterface, EntityOwnerInterfac
   public function getSummary(array $options = []);
 
   /**
+<<<<<<< HEAD
+=======
+   * Returns info icons render array for a paragraph.
+   *
+   * @param array $options
+   *   (optional) Array of additional options, with the following elements:
+   *   - 'show_behavior_icon': Whether the icons should contain the
+   *     behavior settings. Defaults to TRUE to show behavior icons in the
+   *     summary.
+   *
+   * @return array
+   *   A list of render arrays that will be rendered as icons.
+   */
+  public function getIcons(array $options = []);
+
+  /**
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
    * Returns a flag whether a current revision has been changed.
    *
    * The current instance is being compared with the latest saved revision.

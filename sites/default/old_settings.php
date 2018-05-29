@@ -792,11 +792,15 @@ $settings['entity_update_batch_size'] = 50;
 $databases['default']['default'] = array (
   'database' => 'db_exo_git',
   'username' => 'root',
+<<<<<<< HEAD
 
   'password' => 'admin',
 
   'password' => 'root',
 
+=======
+  'password' => 'root',
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -805,7 +809,10 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 
+<<<<<<< HEAD
 $config_directories['sync'] = 'sites/default/files/config_EBEKFNKt8GFrl2gKOw_h5UnS0UkjY2qVdJ6mRCdL42DCSAqZBqZ_jx-kZLdotYNDvuoR0yRKiQ/sync';
 
+=======
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 $config_directories['sync'] = 'sites/default/files/config_O4sGhYmR5WA2jQ_rGZhT2lhd32shq_haIpQVb347Nhd8-GHgwOEu5sG1UDKh-Rs9uFoaA6EP8g/sync';
 

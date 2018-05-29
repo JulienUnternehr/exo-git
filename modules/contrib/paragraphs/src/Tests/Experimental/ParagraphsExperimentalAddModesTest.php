@@ -183,7 +183,14 @@ class ParagraphsExperimentalAddModesTest extends ParagraphsExperimentalTestBase 
 
     // Check if is Text + Image is added as default paragraph type.
     $this->drupalGet('node/add/paragraphed_test');
+<<<<<<< HEAD
     $this->assertText('No Paragraph added yet.');
+=======
+    $elements = $this->xpath('//table[@id="paragraphs-values"]/tbody');
+    $header = $this->xpath('//table[@id="paragraphs-values"]/thead');
+    $this->assertEqual($elements, []);
+    $this->assertNotEqual($header, []);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
     // Check if default type is created only for new host
     $this->setDefaultParagraphType('paragraphed_test', 'paragraphs', 'paragraphs_settings_edit', 'text_image');
@@ -191,7 +198,14 @@ class ParagraphsExperimentalAddModesTest extends ParagraphsExperimentalTestBase 
     $edit = ['title[0][value]' => 'New Host'];
     $this->drupalPostForm(NULL, $edit, t('Save'));
     $this->drupalGet('node/1/edit');
+<<<<<<< HEAD
     $this->assertText('No Paragraph added yet.');
+=======
+    $elements = $this->xpath('//table[@id="paragraphs-values"]/tbody');
+    $header = $this->xpath('//table[@id="paragraphs-values"]/thead');
+    $this->assertEqual($elements, []);
+    $this->assertNotEqual($header, []);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   }
 
   /**
@@ -215,12 +229,26 @@ class ParagraphsExperimentalAddModesTest extends ParagraphsExperimentalTestBase 
     // Check that when only one paragraph type is allowed in a content type,
     // one instance is automatically added in the 'Add content' dialogue.
     $this->drupalGet('node/add/paragraphed_test');
+<<<<<<< HEAD
     $this->assertNoText('No Paragraph added yet.');
+=======
+    $elements = $this->xpath('//table[@id="paragraphs-values"]/tbody');
+    $header = $this->xpath('//table[@id="paragraphs-values"]/thead');
+    $this->assertNotEqual($elements, []);
+    $this->assertNotEqual($header, []);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 
     // Check that no paragraph type is automatically added, if the defaut
     // setting was set to '- None -'.
     $this->setDefaultParagraphType('paragraphed_test', 'paragraphs', 'paragraphs_settings_edit', '_none');
     $this->drupalGet('node/add/paragraphed_test');
+<<<<<<< HEAD
     $this->assertText('No Paragraph added yet.');
+=======
+    $elements = $this->xpath('//table[@id="paragraphs-values"]/tbody');
+    $header = $this->xpath('//table[@id="paragraphs-values"]/thead');
+    $this->assertEqual($elements, []);
+    $this->assertNotEqual($header, []);
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   }
 }

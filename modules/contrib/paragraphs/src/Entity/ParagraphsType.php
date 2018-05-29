@@ -5,9 +5,13 @@ namespace Drupal\paragraphs\Entity;
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityWithPluginCollectionInterface;
+<<<<<<< HEAD
 use Drupal\Core\Render\Element\File;
 use Drupal\paragraphs\ParagraphsBehaviorCollection;
 use Drupal\paragraphs\ParagraphsBehaviorInterface;
+=======
+use Drupal\paragraphs\ParagraphsBehaviorCollection;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 use Drupal\paragraphs\ParagraphsTypeInterface;
 
 /**
@@ -140,7 +144,11 @@ class ParagraphsType extends ConfigEntityBundleBase implements ParagraphsTypeInt
       $this->addDependency($file_icon->getConfigDependencyKey(), $file_icon->getConfigDependencyName());
     }
 
+<<<<<<< HEAD
     return $this->dependencies;
+=======
+    return $this;
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
   }
 
   /**
@@ -170,7 +178,11 @@ class ParagraphsType extends ConfigEntityBundleBase implements ParagraphsTypeInt
   public function hasEnabledBehaviorPlugin($plugin_id) {
     $plugins = $this->getBehaviorPlugins();
     if ($plugins->has($plugin_id)) {
+<<<<<<< HEAD
       /** @var ParagraphsBehaviorInterface $plugin */
+=======
+      /** @var \Drupal\paragraphs\ParagraphsBehaviorInterface $plugin */
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
       $plugin = $plugins->get($plugin_id);
       $config = $plugin->getConfiguration();
       return (array_key_exists('enabled', $config) && $config['enabled'] === TRUE);
