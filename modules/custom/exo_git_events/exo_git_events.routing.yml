@@ -1,0 +1,8 @@
+
+exo_git_events.events_controller_nodeliste:
+  path: '/exo_git_events/nodeliste'
+  defaults:
+    _controller: '\Drupal\exo_git_events\Controller\EventsController::nodeliste'
+    _title: 'NodeListe'
+  requirements:
+    _permission: 'access content'
