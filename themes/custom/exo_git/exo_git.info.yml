@@ -2,7 +2,11 @@ core: 8.x
 type: theme
 base theme: bootstrap
 
+<<<<<<< HEAD
+name: 'Exo Git'
+=======
 name: 'exo_git'
+>>>>>>> 96b1f22e793a1e1f305d8d92bf3bb96f3815c7d4
 description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
 package: 'Bootstrap'
 
