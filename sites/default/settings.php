@@ -297,30 +297,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-<<<<<<< HEAD
-
 $settings['hash_salt'] = 'WEJBC-cfG_oa4XpOb1TWV5FjFhRiUM0e8ZSKuJwHH20z3yo48S5fxGMBc0PtI4PvLS9OepKvKA';
-
-
-
-$settings['hash_salt'] = 'WEJBC-cfG_oa4XpOb1TWV5FjFhRiUM0e8ZSKuJwHH20z3yo48S5fxGMBc0PtI4PvLS9OepKvKA';
-
-
-
-$settings['hash_salt'] = 'WEJBC-cfG_oa4XpOb1TWV5FjFhRiUM0e8ZSKuJwHH20z3yo48S5fxGMBc0PtI4PvLS9OepKvKA';
-
-
-$settings['hash_salt'] = 'zyEa0PYpFhqRXk4RY8PRj5OlY3apHgUnskf95Tcf8T89A9zkcq1asq0Qmt_f_15EakX6z-G1zA';
-
-
-$settings['hash_salt'] = 'l4qfgrO5IZPxzUWXlzHA-oPZ5QTXWeCFuGRnauhvaanoDJjPNTQn_ZeDmlIkRBZVNuL2nTYlKw';
-
-$settings['hash_salt'] = 'WEJBC-cfG_oa4XpOb1TWV5FjFhRiUM0e8ZSKuJwHH20z3yo48S5fxGMBc0PtI4PvLS9OepKvKA';
-
-
-
-
-
 
 /**
  * Deployment identifier.
@@ -804,25 +781,7 @@ $settings['entity_update_batch_size'] = 50;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
 
-  'database' => 'db_exo_git',
-  'username' => 'root',
-  'password' => 'admin',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'standard';
-<
-$config_directories['sync'] = 'sites/default/files/config_O4sGhYmR5WA2jQ_rGZhT2lhd32shq_haIpQVb347Nhd8-GHgwOEu5sG1UDKh-Rs9uFoaA6EP8g/sync';
-$config['system.logging']['error_level'] = 'verbose';
-$config_directories['sync'] = 'sites/default/files/config_0pOqE8jsaVO9S1qyL8oS9R4irVAeTt_xNGIIkv3lQUoAkBavPyj0vtoKqDe5H87qrW29YealWg/sync';
-$config_directories['sync'] = 'sites/default/files/config_EBEKFNKt8GFrl2gKOw_h5UnS0UkjY2qVdJ6mRCdL42DCSAqZBqZ_jx-kZLdotYNDvuoR0yRKiQ/sync';
-
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
